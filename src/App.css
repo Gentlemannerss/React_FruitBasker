@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.fruitBar {
+    display: flex;
+    border: solid 1px black;
+    padding: 2em;
+    gap: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}

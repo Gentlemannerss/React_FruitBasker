@@ -4,7 +4,9 @@ function FruitCounter({ fruitType, buttonClicked, incrementCounter, decrementCou
     return (
         <div className="fruitBar">
             <h3>{fruitType}</h3>
-            <button onClick={incrementCounter}>+</button>
+            <button onClick={incrementCounter}>
+                +
+            </button>
             <p>{buttonClicked}</p>
             <button onClick={decrementCounter} disabled={buttonClicked === 0}>
                 -

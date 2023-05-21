@@ -55,7 +55,7 @@ function ParentComponent() {
     };
 
     return (
-        <div>
+        <div className="fruitContainer">
             <FruitCounter
                 fruitType="🍌 Bananen"
                 buttonClicked={bananaClicked}
@@ -80,7 +80,7 @@ function ParentComponent() {
                 incrementCounter={incrementKiwi}
                 decrementCounter={decrementKiwi}
             />
-            <button onClick={resetCounters}>Reset All</button>
+            <button className="" onClick={resetCounters}>Reset All</button>
         </div>
     );
 }

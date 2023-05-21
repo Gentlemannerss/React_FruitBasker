@@ -3,7 +3,7 @@ import React from 'react';
 function OrderForm() {
     return (
         <div className="information">
-            <form action="">
+            <form>
                 <label htmlFor="firstName">First name: </label>
                 <input type="text" id="firstName" name="firstName"/>
                 <label htmlFor="lastName">Last name: </label>
@@ -14,9 +14,10 @@ function OrderForm() {
                 <input type="text" id="zipCode" name="zipCode"/>
                 <label htmlFor="email">Email: </label>
                 <input type="email" id="email" name="email"/>
-                <select>
-                    <option value=""></option>
-                    <option value=""></option>
+                <label htmlFor="orderfrequency">Orderfrequency :</label>
+                <select name="orderfrequency" id="orderfrequency">
+                    <option value="iedereweek">Iedere week</option>
+                    <option value="iederemaand">Iedere maand</option>
                 </select>
                 <span>
                 <input type="radio" id="overdag" name="deliveryOptions" value="overdag"/>

@@ -1,16 +1,23 @@
 import React from 'react';
+import Button from "./Button";
 
 function FruitCounter({ fruitType, buttonClicked, incrementCounter, decrementCounter }) {
     return (
         <div className="fruitBar">
             <h3>{fruitType}</h3>
-            <button onClick={incrementCounter}>
-                +
-            </button>
+            <Button
+                buttonType= "button"
+                clickHandler={incrementCounter}
+            > +
+            </Button>
+
             <p>{buttonClicked}</p>
-            <button onClick={decrementCounter} disabled={buttonClicked === 0}>
+            <Button
+                buttonType= "button"
+                clickHandler={decrementCounter}
+                toggleDisabled={buttonClicked === 0}>
                 -
-            </button>
+            </Button>
         </div>
     );
 }

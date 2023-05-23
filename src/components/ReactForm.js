@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import Button from "./Button";
 
 function ReactForm() {
     const [formState, setFormState] = useState({
@@ -20,9 +21,15 @@ function ReactForm() {
         });
     }
 
+    function handleSubmit( e ){
+        e.preventDefault()
+        console.log(formState)
+    }
+
     return (
         <div className="information">
-            <form>
+            <form onSubmit={ handleSubmit }>
+            <h2>Form in React</h2>
             <label>
                 First name:
             <input
@@ -117,11 +124,15 @@ function ReactForm() {
                 <input
                     type="checkbox"
                     name="termsAndConditions"
-                    checked={formState.termsAndConditions}
                     onChange={handleChange}
                 />
                 Akkoord met de algemene voorwaarden
             </label>
+                <Button
+                    buttonType="submit"
+                >
+                    verzend
+                </Button>
             </form>
         </div>
     )

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import FruitCounter from './FruitCounter';
+import Button from "./Button";
 
 function ParentComponent() {
     const [bananaClicked, setBananaClicked] = useState(0);
@@ -80,7 +81,11 @@ function ParentComponent() {
                 incrementCounter={incrementKiwi}
                 decrementCounter={decrementKiwi}
             />
-            <button className="" onClick={resetCounters}>Reset All</button>
+            <Button
+                className="aa"
+                clickHandler={resetCounters}>
+                Reset All
+            </Button>
         </div>
     );
 }

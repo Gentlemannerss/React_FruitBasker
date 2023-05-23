@@ -62,3 +62,7 @@ input {
     border-radius: 15px;
     text-align: center;
 }
+
+/*  Optioneel nog conditioned styling toevoegen aan button's die aangeklikt worden.
+    Dit opvangen in een twee verschillende styling.
+*/

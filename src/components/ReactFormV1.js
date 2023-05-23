@@ -7,6 +7,7 @@ function ReactFormV1() {
         <>
         <div className="information">
             <form>
+                <h2>Form in React with useState</h2>
                 <label htmlFor="firstName">
                     First name:
                     <input

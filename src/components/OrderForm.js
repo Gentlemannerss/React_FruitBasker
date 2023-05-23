@@ -4,6 +4,7 @@ function OrderForm() {
     return (
         <div className="information">
             <form>
+                <h2>Form in standard HTML</h2>
                 <label htmlFor="firstName">First name: </label>
                 <input type="text" id="firstName" name="firstName"/>
                 <label htmlFor="lastName">Last name: </label>

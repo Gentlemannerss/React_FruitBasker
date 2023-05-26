@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    flex : 1 1 1200px;
+}
+
+header img {
+    max-width: 100%;
+}
+
+.fruitContainer {
+    background-color: #0E7173;
+    padding: 1.1em;
+    border-radius: 5px;
+}
+
+.fruitBar {
+    display: flex;
+    border: solid 1px black;
+    padding: 2em;
+    gap: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E7173;
+    padding: 2em;
+    border-radius: 5px;
+    gap: 0.3em;
+    text-align: center;
+}
+
+.twoItems {
+    display: flex;
+    gap: 2rem;
+}
+
+input {
+    border-radius: 15px;
+    text-align: center;
+}
+
+/*  Optioneel nog conditioned styling toevoegen aan button's die aangeklikt worden.
+    Dit opvangen in een twee verschillende styling.
+*/
